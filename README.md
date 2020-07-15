@@ -25,18 +25,19 @@ Run `npm start` to view this app locally.
 * Improve the user feedback and animations
 
 ### Main Components
-`FindStuntDouble.js` The Wrapper for the app. It contains the logo, Card Deck, and the user guide icons at the bottom.
-`src/Components/Card.js` Card component with an image of the stunt actor and the name text.
-`src/Components/Deck.js` Make the Cards into Stack. Drag & Drop interaction happens here.
+* `FindStuntDouble.js` The Wrapper for the app. It contains the logo, Card Deck, and the user guide icons at the bottom.
+* `src/Components/Card.js` Card component with an image of the stunt actor and the name text.
+* `src/Components/Deck.js` Make the Cards into Stack. Drag & Drop interaction happens here.
 
 
 #### Used
 I used npm library [react-draggable](https://www.npmjs.com/package/react-draggable#draggablecore-api)
 for the draggable card component.
+
 I used [node-sass](https://www.npmjs.com/package/node-sass) for SCSS file.
 
 
 #### Want to Try
 I found some great libraries for animations.
-[React-Spring](https://www.react-spring.io/)
-[React-Use-Gesture](https://use-gesture.netlify.app/)
+* [React-Spring](https://www.react-spring.io/)
+* [React-Use-Gesture](https://use-gesture.netlify.app/)
