@@ -8,7 +8,7 @@ const judgeLikeDislike = (positionX) => {
     } else if (positionX > -150) {
         alert("liked");
     } else {
-        //needs error handling for the case when user doesn't swipe but just clicks on the card
+        //needs error handling for the case when user doesn't swipe at all but just clicks on the card
     }
 };
 
@@ -16,7 +16,7 @@ function Deck(props) {
 
     const [positionX, setPositionX] = useState(-150);
 
-    //store user choice in liked array as state
+    //store user choice in "liked" array as state
     const [liked, setLiked] = useState([]);
 
 

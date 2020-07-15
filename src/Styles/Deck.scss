@@ -5,6 +5,8 @@
     right: 0;
     bottom: 0;
     background: #DCDCDC;
+    font-family: sans-serif;
+    color: #5d5d5d;
 }
 
 @mixin dropzone {
@@ -12,12 +14,6 @@
     width: 50%;
     height: 100%;
     z-index: -1;
-}
-
-.card-stack {
-    position: absolute;
-    background: #fff;
-    height: 400px;
 }
 
 .flex-container {
@@ -68,13 +64,19 @@
     0 20px 1px -9px rgba(0,0,0,0.15);
     padding: 20px;
 
-    .stunt-photo {
-        width: 300px;
-    }
+    .card-stack {
+        position: absolute;
+        background: #fff;
+        height: 400px;
 
-    .stunt-name {
-        font-size: 28px;
-        text-align: center;
+        .stunt-photo {
+            width: 300px;
+        }
+
+        .stunt-name {
+            font-size: 28px;
+            text-align: center;
+        }
     }
 }
 
