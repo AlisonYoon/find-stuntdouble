@@ -25,6 +25,7 @@ Run `npm start` to view this app locally.
 * Improve the user feedback and animations
 
 ### Main Components
+* `Workers.js` The data store with an array of stunt doubles.
 * `FindStuntDouble.js` The Wrapper for the app. It contains the logo, Card Deck, and the user guide icons at the bottom.
 * `src/Components/Card.js` Card component with an image of the stunt actor and the name text.
 * `src/Components/Deck.js` Make the Cards into Stack. Drag & Drop interaction happens here.
