@@ -1,27 +1,92 @@
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #DCDCDC;
+}
+
+@mixin dropzone {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+//.dislike-zone {
+//    @include dropzone;
+//    background-color: sandybrown;
+//}
+//
+//.like-zone {
+//    @include dropzone;
+//    left: 50%;
+//    top: 0;
+//    background-color: darkcyan;
+//}
+
+.card-stack {
+    position: absolute;
+    background: #fff;
+    height: 400px;
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .logo {
+        img {
+            width: 200px;
+        }
+    }
+
+    .position-text {
+        font-weight: normal;
+    }
+
+    .user-guide-icons {
+        display: flex;
+        width: 340px;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        img {
+            width: 80px;
+        }
+    }
 }
-.logo img {
-    width: 200px;
-}
+
 
 .stunt-card-container {
-    border: 1px solid grey;
-    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.15);
     border-radius: 10px;
-}
-
-.stunt-photo {
+    position: relative;
     width: 300px;
+    height: 430px;
+    background: #fff;
+    box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+        /* The second layer */
+    0 10px 0 -5px #fff,
+        /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+        /* The third layer */
+    0 20px 0 -10px #fff,
+        /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 20px;
+
+    .stunt-photo {
+        width: 300px;
+    }
+
+    .stunt-name {
+        font-size: 28px;
+        text-align: center;
+    }
 }
 
-.stunt-name {
-    font-size: 36px;
-}
-
-.user-guide-icons img {
-    width: 80px;
-}
 
