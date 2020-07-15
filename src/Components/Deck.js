@@ -33,7 +33,6 @@ function Deck(props) {
     };
 
     const onDragOver = (e, props) => {
-        console.log('dragover', props.node);
         props.node.style.display = "none";
         setPositionX(props.x);
     };
@@ -45,16 +44,17 @@ function Deck(props) {
             <div className="flex-container stunt-card-container">
                     <div className="draggable-card">
                     {
-                        props.data.map((data) => (
+                        props.data.map((workers) => (
                             <Draggable
                                 handle=".draggable-card" // refers to the child that is draggable component
                                 defaultPosition={{x: -150, y: 0}} //defaultPosition is starting point
                                 grid={[2,2]} // grid size that the component moves on. the smaller the number, smoother action.
                                 onStart={onDragStart}
                                 onStop={onDragOver}
+                                key={workers.stuntId} // "Each Child in the list should have unique key value" error message resolved
                             >
                                 <div className="draggable-card">
-                                    <Card  key={data.stuntId} imgSrc={data.img} name={data.name}/>
+                                    <Card imgSrc={workers.img} name={workers.name}/>
                                 </div>
                             </Draggable>
                         ))
