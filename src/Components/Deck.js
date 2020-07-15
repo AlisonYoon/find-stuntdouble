@@ -33,6 +33,8 @@ function Deck(props) {
     };
 
     const onDragOver = (e, props) => {
+        // Here, I can grab the picked card's node to see which card is picked. By looking at its image source for example. Then I can store the name and image source in the "like" state.
+        // console.log(props.node);
         props.node.style.display = "none";
         setPositionX(props.x);
     };
