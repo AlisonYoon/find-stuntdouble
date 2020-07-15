@@ -1,11 +1,18 @@
 # Find Stunt Doubles
 
-View the project [demo](https://alisonyoon.github.io/find-stuntdouble/).
-
 ![Stunt Double App](public/img/preview.png)
 
-## Clone this repo in your local machine
-Run `npm start` to view this app locally
+
+## Demo
+View the project [demo](https://alisonyoon.github.io/find-stuntdouble/).
+
+
+## Run locally
+Clone this repo in your machine.
+Run `npm start` to view this app locally.
+
+
+## About
 
 ### Achieved
 * Creating a data store with an array of 'workers' to be displayed in the UI
